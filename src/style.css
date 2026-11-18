@@ -1,0 +1,25 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f3f5f9;
+  color: #1f2937;
+}
+.conteneur { max-width: 980px; margin: 0 auto; padding: 24px 16px; }
+h1 { margin: 0 0 12px; }
+
+.bouton {
+  background: #1d4ed8; color: white; border: none; border-radius: 6px;
+  padding: 9px 16px; cursor: pointer; font-weight: 600; font-size: 15px;
+  text-decoration: none; display: inline-block;
+}
+.bouton:hover:not(:disabled) { filter: brightness(.9); }
+.bouton:disabled { opacity: .55; cursor: not-allowed; }
+.bouton.vert { background: #0f7a3d; }
+.bouton.rouge { background: #b91c1c; }
+.bouton.gris { background: #e5e7eb; color: #1f2937; }
+.bouton.petit { padding: 5px 10px; font-size: 13px; }
+
+.message { background: white; border: 1px solid #d1d5db; border-radius: 8px; padding: 14px 16px; margin: 12px 0; }
+.message.erreur { background: #fee2e2; border-color: #e99a9a; color: #8a1313; }
+.message.succes { background: #d8f3e0; border-color: #86c99b; color: #0e5a2a; }
